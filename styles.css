@@ -1,8 +1,20 @@
+body {
+    background-color: grey;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
 .square {
-  
-    width: 5px;
-    border: 30px;
-   color: white;
+ 
+    width: 3px;
+    border: 10px;
+   color: black;
     border-style: solid;
+    
     
 }
