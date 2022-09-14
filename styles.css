@@ -1,8 +1,8 @@
 .square {
-    display: flex;
+  
     width: 5px;
     border: 30px;
-    border-color: black;
-    border-style:ridge;
+   color: white;
+    border-style: solid;
     
 }
