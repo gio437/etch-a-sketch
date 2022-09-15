@@ -5,19 +5,20 @@ body {
 .box {
     display: flex;
     justify-content: center;
+   overflow: auto;
 }
 
 .grid {
     display: flex;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    height: 300px;
-    width: 400px;
+   
   
+    flex-wrap: wrap;
+    max-height: 370px;
+    max-width: 400px;
+    align-self: stretch;
 }
 
 .square {
- 
     width: 3px;
     border: 10px;
     margin: 1px;
@@ -26,7 +27,7 @@ body {
 }
 
 .click {
-  margin-top: 85px;
+  margin: 30px;
   display: flex;
   flex-grow: 4;
   justify-content: center;
@@ -41,5 +42,16 @@ body {
     width: 80px;
     font-size: 18px;
     border-color: #ff9d00;
+    
 }
 
+.etch {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60px;
+    flex-wrap: wrap;
+    color: black;
+    font-style:italic;
+    font-size: 40px;
+}
