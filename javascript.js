@@ -4,6 +4,7 @@
 // eventListener "hover"^
 // create button that will change color selection -function
 // create button that will reset the grid -function
+// use variable for extra credit -var
 
 let color = 0; 
 
@@ -60,5 +61,7 @@ function changeSquares() {
 
         box.appendChild(square); 
     }
+
+    playGame();
     }
 }
