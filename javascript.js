@@ -3,12 +3,13 @@
 // create eventListener that will change css.style.color -function
 // eventListener "hover"^
 // create button that will change color selection -function
+// create button that will reset the grid -function
 
 let color = 0; 
 
 function createSquare() {
 
-    for (let i = 0; i < 16; i++) {
+    for (let i = 0; i < 256; i++) {
     let box = document.querySelector(".grid");
 
     let square = document.createElement("div");
@@ -28,11 +29,11 @@ function createSquare() {
     let square = document.querySelectorAll(".square");
     square.forEach(square => {
     square.addEventListener("mouseover", (e)=>{
-        square.style.color = "blue";
+        square.style.color = "#ff9d00";
     });
    });
 }
 
-    playGame();
+    playGame(); //colors squares on mouseover
 
 

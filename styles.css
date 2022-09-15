@@ -1,20 +1,45 @@
 body {
-    background-color: grey;
+    background-color:  #193549;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
 }
 
 .grid {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
 }
 
 .square {
  
     width: 3px;
     border: 10px;
-   color: black;
-    border-style: solid;
-    
-    
+    margin: 1px;
+    color: gray;
+    border-style:solid;
 }
+
+.click {
+  margin-top: 85px;
+  display: flex;
+  flex-grow: 4;
+  justify-content: center;
+  
+}
+    
+    
+
+.reset {
+   
+    background-color: #ff9d00;
+    padding: 10px;
+    width: 80px;
+    font-size: 18px;
+    border-color: #ff9d00;
+}
+
