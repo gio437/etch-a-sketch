@@ -58,7 +58,8 @@ function changeSquares() {
 
         let square = document.createElement("div");
         square.classList.add("square");
-
+        square.border = amount;
+        square.width = amount;
         box.appendChild(square); 
     }
 
