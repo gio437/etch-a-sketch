@@ -5,6 +5,7 @@ body {
 .box {
     display: flex;
     justify-content: center;
+    
 }
 
 .grid {
@@ -13,6 +14,7 @@ body {
     flex-wrap: wrap;
     height: 300px;
     width: 400px;
+  
 }
 
 .square {
@@ -35,7 +37,6 @@ body {
     
 
 .reset {
-   
     background-color: #ff9d00;
     padding: 10px;
     width: 80px;
