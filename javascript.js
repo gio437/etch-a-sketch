@@ -49,7 +49,7 @@ function changeSquares() {
     let box = document.querySelectorAll(".square");
     
     if (amount <= 100){
-    for (let i = 0; i < 256; i++) {
+    for (let i = 0; i < box.length; i++) {
         box[i].remove();
 }
     
