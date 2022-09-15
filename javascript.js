@@ -22,26 +22,17 @@ function createSquare() {
     createSquare(); //makes the squares
    
 
-
+    
 
     function playGame() {
-    
-    let square = document.querySelector(".square");
-
-
-    square.addEventListener("mouseover", changeColor);
-    
+    let square = document.querySelectorAll(".square");
+    square.forEach(square => {
+    square.addEventListener("mouseover", (e)=>{
+        square.style.color = "blue";
+    });
+   });
 }
 
     playGame();
 
-
-function changeColor() {
-    
-    let hello = document.querySelectorAll(".square");
-
-    for (let i = 0; i < hello.length; i++){
-    hello[i].style.color = "blue";
-    }
-}
 
