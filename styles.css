@@ -5,23 +5,23 @@ body {
 .box {
     display: flex;
     justify-content: center;
-    overflow: auto;
+   overflow: auto;
 }
 
 .grid {
     display: flex;
     flex-wrap: wrap;
-    max-height: 370px;
-    max-width: 400px;
-    align-self: stretch;
+    height: 300px;
+    width: 300px;
+    
 }
 
 .square {
-    width: 3px;
-    border: 10px;
-    margin: 1px;
-    color: gray;
-    border-style:solid;
+    width: 20px;
+    height: 20px;
+    
+    background: gray;
+    
 }
 
 .click {

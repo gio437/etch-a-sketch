@@ -30,7 +30,7 @@ function createSquare() {
     let square = document.querySelectorAll(".square");
     square.forEach(square => {
     square.addEventListener("mouseover", (e)=>{
-        square.style.color = "#ff9d00";
+        square.style.background = "#ff9d00";
     });
    });
 }
@@ -45,8 +45,10 @@ press.addEventListener("click", changeSquares);
 
 function changeSquares() {
     let amount = window.prompt();
+    let user = 300 / amount;
 
     let box = document.querySelectorAll(".square");
+    
     
     if (amount <= 100){
     for (let i = 0; i < box.length; i++) {
@@ -54,15 +56,26 @@ function changeSquares() {
 }
     
     for (let i = 0; i < amount * amount; i++) {
-        let box = document.querySelector(".grid");
+        let grid = document.querySelector(".grid");
 
         let square = document.createElement("div");
         square.classList.add("square");
-        square.border = amount;
-        square.width = amount;
-        box.appendChild(square); 
+       
+        box.forEach((e) => {
+            square.style.height = user.toString() + "px";
+            square.style.width = user.toString() + "px";
+        });
+        
+        grid.appendChild(square); 
+
+
     }
+
+    
 
     playGame();
     }
 }
+
+
+//user.toString() + "px";
