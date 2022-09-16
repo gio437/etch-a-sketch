@@ -5,7 +5,7 @@ body {
 .box {
     display: flex;
     justify-content: center;
-   overflow: auto;
+    overflow: auto;
 }
 
 .grid {
@@ -27,7 +27,7 @@ body {
 .click {
   margin: 30px;
   display: flex;
-  flex-grow: 4;
+  gap: 30px;
   justify-content: center;
   
 }
@@ -35,11 +35,11 @@ body {
     
 
 .reset {
-    background-color: #ff9d00;
+    background-color: red;
     padding: 10px;
     width: 80px;
     font-size: 18px;
-    border-color: #ff9d00;
+    border-color: red;
     
 }
 
@@ -52,4 +52,29 @@ body {
     color: black;
     font-style:italic;
     font-size: 40px;
+}
+
+.color {
+    margin: 30px;
+  display: flex;
+  
+  justify-content: center;
+}
+
+.rainbow {
+    background-color: magenta;
+    padding: 10px;
+    width: 100px;
+    font-size: 18px;
+    border-color: magenta;
+   
+}
+
+
+.orange {
+    background-color: #ff9d00;
+    padding: 10px;
+    width: 100px;
+    font-size: 18px;
+    border-color: #ff9d00;
 }

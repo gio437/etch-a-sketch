@@ -6,7 +6,7 @@
 // create button that will reset the grid -function
 // use variable for extra credit -var
 
-let color = 0; 
+color = 0; //maybe add functionality to allow it  to remember the color after reset?
 
 function createSquare() {
 
@@ -35,13 +35,16 @@ function createSquare() {
    });
 }
 
-    playGame(); //colors squares on mouseover
+let press3 = document.querySelector(".orange");
+press3.addEventListener("click", playGame);  //colors squares on mouseover
 
 // create arrow function to remove querySelector all .square -function
 // use loop right under to add .square back to the DOM -function
 
+
 let press = document.querySelector(".reset");
 press.addEventListener("click", changeSquares);
+
 
 function changeSquares() {
     let amount = window.prompt();
@@ -71,11 +74,33 @@ function changeSquares() {
 
     }
 
-    
-
-    playGame();
     }
 }
 
 
-//user.toString() + "px";
+//Extra Credit
+
+let press2 = document.querySelector(".rainbow");
+press2.addEventListener("click", createRainbow);
+
+
+function createRainbow() {
+    let colorful = document.querySelectorAll(".square");
+    colorful.forEach(colorful => {
+        colorful.addEventListener("mouseover", (e)=>{
+        colorful.style.background = '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6);
+    });
+   });
+}
+
+function rememberColor() {
+if (color = 0){
+    playGame();
+    color++
+}
+else if (color = 1){
+    createRainbow;
+    color--;
+}
+}
+//rememberColor();
