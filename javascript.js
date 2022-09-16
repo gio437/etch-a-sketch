@@ -55,7 +55,7 @@ function changeSquares() {
     let box = document.querySelectorAll(".square");
     
     
-    if (amount <= 100){
+    if (amount <= 100 && amount > 0){
     for (let i = 0; i < box.length; i++) {
         box[i].remove();
 }
@@ -99,5 +99,13 @@ function createRainbow() {
         colorful.style.background = '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6);
     });
    });
+   createBlack();
 }
 
+function createBlack() {
+    let black = document.querySelectorAll(".square");
+    black.forEach(black => {
+        black.addEventListener("mouseover", (e)=>{
+        black.style.background =  
+    });
+});
