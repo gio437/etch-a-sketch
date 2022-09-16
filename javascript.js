@@ -27,6 +27,8 @@ function createSquare() {
     
 
     function playGame() {
+    color = 1;
+
     let square = document.querySelectorAll(".square");
     square.forEach(square => {
     square.addEventListener("mouseover", (e)=>{
@@ -71,9 +73,13 @@ function changeSquares() {
         
         grid.appendChild(square); 
 
-
     }
-
+    if (color == 1) {
+        playGame();
+    }
+    else if (color == 2) {
+        createRainbow();
+    }
     }
 }
 
@@ -85,6 +91,8 @@ press2.addEventListener("click", createRainbow);
 
 
 function createRainbow() {
+    color = 2;
+
     let colorful = document.querySelectorAll(".square");
     colorful.forEach(colorful => {
         colorful.addEventListener("mouseover", (e)=>{
@@ -93,14 +101,3 @@ function createRainbow() {
    });
 }
 
-function rememberColor() {
-if (color = 0){
-    playGame();
-    color++
-}
-else if (color = 1){
-    createRainbow;
-    color--;
-}
-}
-//rememberColor();
