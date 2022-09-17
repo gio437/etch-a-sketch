@@ -23,6 +23,11 @@ body {
     
 }
 
+/*.square:hover {
+    background-color: black;
+    filter: grayscale(.10%)
+}*/
+
 .click {
   margin: 30px;
   display: flex;

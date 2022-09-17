@@ -49,7 +49,7 @@ press.addEventListener("click", changeSquares);
 
 
 function changeSquares() {
-    let amount = window.prompt();
+    let amount = window.prompt("Input number 1-100");
     let user = 300 / amount;
 
     let box = document.querySelectorAll(".square");
@@ -103,26 +103,26 @@ function createRainbow() {
   
 }
 
-//function createBlack() {
+function createBlack() {
     //let opacity = 0.1;
 
    
-    //let black = document.querySelectorAll(".square");
-    //black.forEach(black => {
-        //black.addEventListener("mouseover", (e)=>{
+    let black = document.querySelectorAll(".square");
+    black.forEach(black => {
+        black.addEventListener("mouseover", (e)=>{
         //black.style.background = `rgba(000, 000, 000, ${opacity})`;
         //let shade = window.getComputedStyle(black);
 
         //let currentOpacity = shade.getPropertyValue(`opacity`) + 0.1;
         //console.log(currentOpacity);
         //black.style.background = `rgba(000, 000, 000, ${currentOpacity})`
-    //});
-    //});
+    });
+    });
 
     
 
    
-//}
+}
 
 //createBlack();
 
