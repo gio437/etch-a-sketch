@@ -97,15 +97,33 @@ function createRainbow() {
     colorful.forEach(colorful => {
         colorful.addEventListener("mouseover", (e)=>{
         colorful.style.background = '#'+(0x1000000+Math.random()*0xffffff).toString(16).substr(1,6);
+        
     });
    });
-   createBlack();
+  
 }
 
-function createBlack() {
-    let black = document.querySelectorAll(".square");
-    black.forEach(black => {
-        black.addEventListener("mouseover", (e)=>{
-        black.style.background =  
-    });
-});
+//function createBlack() {
+    //let opacity = 0.1;
+
+   
+    //let black = document.querySelectorAll(".square");
+    //black.forEach(black => {
+        //black.addEventListener("mouseover", (e)=>{
+        //black.style.background = `rgba(000, 000, 000, ${opacity})`;
+        //let shade = window.getComputedStyle(black);
+
+        //let currentOpacity = shade.getPropertyValue(`opacity`) + 0.1;
+        //console.log(currentOpacity);
+        //black.style.background = `rgba(000, 000, 000, ${currentOpacity})`
+    //});
+    //});
+
+    
+
+   
+//}
+
+//createBlack();
+
+//if 0.1 = 0.2 window.getComputedStyle(black) passes element to it, returns style object, 
